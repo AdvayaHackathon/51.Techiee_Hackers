@@ -16,30 +16,99 @@ Welcome to the Hackathon! We're excited to have you on board and can't wait to s
 - Balasuriya PT 
 - Harris Jeremah B 
 - Monish G 
+**Sketch Mentor**
 
-## Problem Statement
+**Your personal AI-powered study companion**
 
-> **Tamil Nadu**
+Sketch Mentor simplifies complex content, supports self-learning, and makes education more accessible — especially for students without regular access to teachers or reading-heavy material.
 
----
+📚 Features:
 
-### Let's Get Started 
+|**Feature**|**Description**|
+| :- | :- |
+|🧠 **AI Document Summarization**|Condenses long documents into simple summaries for quick understanding.|
+|📋 **Quiz & Flashcard Creation**|Generates interactive quizzes and flashcards from any uploaded content.|
+|💬 **Real-Time Doubt Solving**|AI chatbot answers questions without needing a live tutor.|
+|🎥 **Video Generation**|Converts content into short explainer videos to support visual learners.|
+|🖼️ **Visual Canvas**|Transforms topics into interactive flowcharts and diagrams.|
 
-This repository has been set up for your hackathon project. Use it to manage your code, collaborate, and share your progress.
+**🧰 Tech Stack**
 
-**Important Guidelines - Please Read Carefully**
+**🖥️ Backend**
 
-- Do **not** make any commits **before the allotted start date and time**. Early commits may result in getting caught.
-- Commit your work **regularly** to showcase your progress throughout the hackathon.
+- **Flask (Python)** – Lightweight server framework for handling AI-powered services.
 
-- Maintain **professionalism and integrity** at all times. Any form of plagiarism or rule-breaking will lead to strict action.
+**🤖 AI Integration**
 
-Let's keep it fair, fun, and impactful! 
----
+- **Google Gemini** powers:
+  - Content summarization
+  - Quiz & flashcard creation
+  - Doubt-solving chatbot
+  - Visual canvas explanations
 
-**Good luck, Team Techiee Hackers! Happy coding!**
+**📄 File Processing**
 
-If you need any support during the hackathon, don't hesitate to reach out to the co-ordinators.
+- **PDFs**: PyPDF
+- **Word Docs**: python-docx
+- **Presentations**: python-pptx
+- **Audio/Video**: Custom Speech-to-Text Processor
 
-Cheers,  
-_Advaya Hackathon Team_
+**🌐 APIs Used**
+
+- **YouTube Data API** – Fetches and recommends educational content
+- **Gemini API** – For content creation and chatbot interactions
+
+**🧠 Visual Canvas**
+
+- **Gemini**, **Gwen**, and **DeepSeek** work together to turn raw text into meaningful visuals.
+
+**📦 Data Management**
+
+- **FAISS Vector Database** – Enables semantic search and smart retrieval of content for chatbot and visual explanations.
+
+**🎬 Video Generation**
+
+- **PyTorch Environment** – AI-generated explainer videos from text or summarized content.
+
+**⚙️ Setup & Installation**
+
+**1. Prerequisites**
+
+- Python 3.9+
+- pip
+- Git
+
+**2. Clone the Repository:**
+git clone <url>
+
+cd sketch-mentor
+
+3\**. Create Virtual Environment:**
+python -m venv venv
+
+\# macOS/Linux
+
+source venv/bin/activate
+
+\# Windows
+
+venv\Scripts\activate
+
+**4. Install Dependencies:**
+pip install -r requirements.txt
+
+
+
+**5. Configure Environment Variables**
+
+Create a .env file in the root directory:
+
+GOOGLE\_GEMINI\_API\_KEY=your\_google\_gemini\_api\_key
+
+YOUTUBE\_API\_KEY=your\_youtube\_data\_api\_key
+
+
+
+**6. Run the Application:**
+python app.py
+
